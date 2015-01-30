@@ -65,7 +65,7 @@ function average(x, y) {
 }
 
 function isGoodEnough(guess, x) {
-  if (Math.abs(square(guess)-x)<0.000000000000000000000001) {
+  if (Math.abs(square(guess)-x)/x<0.000000001) {
     return true;
   } 
 }
